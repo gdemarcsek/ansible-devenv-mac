@@ -1,0 +1,17 @@
+- hosts: mac_laptop
+  roles:
+    - unix_utils
+    - osx_settings
+    - docker
+    - dotfiles
+    - fonts
+    - terminal
+    - bashrc
+    - vim
+    - git
+    - vscode
+    - flycut
+    - ruby
+    - python
+    #- i2cssh
+    - golang

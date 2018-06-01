@@ -1,0 +1,6 @@
+- name: Install latest golang
+  homebrew:
+    name: golang
+
+- name: Add golang to PATH
+  include: roles/bashrc/tasks/bashrc_template.yml name=golang-path src=templates/golang-path.sh priority=20

@@ -1,0 +1,15 @@
+---
+- name: Install dark mode
+  homebrew:
+    name: "dark-mode"
+
+- name: Check dark mode
+  shell: "dark-mode status | grep -q on"
+  register: dark_mode_status
+  ignore_errors: yes
+  changed_when: False
+
+- name: Set dark mode
+  command: "dark-mode on"
+  when: "dark_mode_status is failed"
+

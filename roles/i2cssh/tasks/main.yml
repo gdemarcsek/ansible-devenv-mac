@@ -1,0 +1,5 @@
+---
+- name: Install i2cssh
+  gem:
+    name: "i2cssh"
+

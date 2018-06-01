@@ -1,0 +1,10 @@
+---
+- name: Tap fonts
+  homebrew_tap:
+    name: caskroom/fonts
+  ignore_errors: yes
+
+- name: Install Adobe Source Code Pro
+  homebrew_cask:
+    name: "font-source-code-pro"
+

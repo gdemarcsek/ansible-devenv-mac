@@ -1,0 +1,8 @@
+---
+- name: Install Docker packages
+  homebrew:
+    name: "{{ item }}"
+  with_items:
+    - "docker"
+    - "docker-compose"
+

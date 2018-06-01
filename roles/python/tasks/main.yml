@@ -1,0 +1,8 @@
+---
+- name: Install Python
+  homebrew:
+    name: "python"
+
+- name: Install IPython
+  homebrew:
+    name: "ipython"

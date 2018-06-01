@@ -1,0 +1,24 @@
+- name: Create temp dir
+  command: mktemp -d
+  register: tmp
+
+- name: Extract {{ name }}
+  unarchive:
+    src: ~/.ansible/{{ src }}
+    dest: "{{ tmp.stdout }}"
+    remote_src: true
+
+- name: Find font files of {{ name }}
+  find:
+    paths: "{{ tmp.stdout }}"
+    patterns: "*.otf,*.ttf"
+    recurse: true
+  register: fontfiles
+
+- name: Copy font files of {{ name }}
+  copy:
+    src: "{{ item.path }}"
+    dest: ~/Library/Fonts/{{ dst }}
+    remote_src: true
+  with_items: "{{ fontfiles.files }}"
+

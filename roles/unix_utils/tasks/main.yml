@@ -1,0 +1,17 @@
+---
+- name: Install common utilities
+  homebrew:
+    name: "{{ item }}"
+  with_items:
+    - jq
+    - htop
+    - wget
+    - curl
+    - screen
+    - tmux
+    - tree
+    - ack
+    - nmap
+    - gnu-tar
+    - exa
+    - peco

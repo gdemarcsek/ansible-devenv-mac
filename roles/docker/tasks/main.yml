@@ -1,6 +1,6 @@
 ---
 - name: Install Docker packages
-  homebrew:
+  homebrew_cask:
     name: "{{ item }}"
   with_items:
     - "docker"

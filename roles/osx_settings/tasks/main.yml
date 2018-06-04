@@ -13,3 +13,10 @@
   command: "dark-mode on"
   when: "dark_mode_status is failed"
 
+- name: Install Hungarian keyboard layout
+  become: yes
+  copy:
+    src: MyHungarian.keylayout
+    dest: "/Library/Keyboard Layouts/"
+
+

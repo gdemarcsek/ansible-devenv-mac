@@ -1,0 +1,9 @@
+---
+- name: Install PHP from homebrew
+  homebrew:
+    name: php71
+
+- name: Install Composer from Homebrew
+  homebrew:
+    name: composer
+

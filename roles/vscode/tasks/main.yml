@@ -6,6 +6,7 @@
 - name: Get the list of installed VSCode extensions
   shell: "code --list-extensions | tr '[:upper:]' '[:lower:]'"
   register: installed_vscode_extensions
+  changed_when: False
 
 
 - name: Install VSCode extensions

@@ -4,6 +4,8 @@
     - osx_settings
     - docker
     - dotfiles
+    - onepassword
+    - ssh_keys
     - fonts
     - terminal
     - bashrc
@@ -15,3 +17,4 @@
     - python
     #- i2cssh
     - golang
+    - php

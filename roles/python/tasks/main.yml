@@ -6,3 +6,9 @@
 - name: Install IPython
   homebrew:
     name: "ipython"
+
+- name: Install virtualenv globally
+  become: yes
+  pip:
+    name: virtualenv
+

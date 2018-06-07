@@ -1,0 +1,5 @@
+---
+- name: Install mycli
+  homebrew:
+    name: mycli
+

@@ -1,0 +1,5 @@
+---
+- name: Install Java
+  homebrew_cask:
+    name: "{{ java_brew_package }}"
+

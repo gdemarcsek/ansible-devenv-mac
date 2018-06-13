@@ -21,3 +21,5 @@
     - virt
     - kubernetes
     - mysql
+    - sonarqube
+

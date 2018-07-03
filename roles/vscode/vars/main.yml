@@ -7,4 +7,6 @@ vscode_extensions:
   - "ms-vscode.go"
   - "peterjausovec.vscode-docker"
   - "rebornix.ruby"
+  - "vstirbu.vscode-mermaid-preview"
+
 

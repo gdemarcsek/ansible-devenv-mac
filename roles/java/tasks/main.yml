@@ -3,3 +3,11 @@
   homebrew_cask:
     name: "{{ java_brew_package }}"
 
+- name: Install Maven
+  homebrew:
+    name: maven
+
+- name: Install Gradle
+  homebrew:
+    name: gradle
+

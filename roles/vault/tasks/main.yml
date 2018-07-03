@@ -1,0 +1,6 @@
+---
+- name: Install Hashicorp Vault
+  homebrew:
+    name: vault
+    state: present
+

@@ -3,3 +3,5 @@
   homebrew:
     name: kubectl
 
+- include_role:
+    name: minikube

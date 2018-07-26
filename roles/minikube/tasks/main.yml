@@ -1,0 +1,31 @@
+- name: Download latest minikube
+  get_url:
+    url: https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64
+    dest: ~/minikube
+
+- name: Install minikube
+  become: true
+  command: mv {{ ansible_env.HOME }}/minikube /usr/local/bin/
+
+- name: Set permissions for minikube
+  file:
+    path: /usr/local/bin/minikube
+    mode: 0751
+
+- name: Download hyperkit
+  get_url:
+    url: https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-hyperkit
+    dest: ~/docker-machine-driver-hyperkit
+
+- name: Install hyperkit Docker machine driver
+  become: true
+  command: mv {{ ansible_env.HOME }}/docker-machine-driver-hyperkit /usr/local/bin/
+
+- name: Set permissions for hyperkit driver
+  become: true
+  file:
+    path: /usr/local/bin/docker-machine-driver-hyperkit
+    mode: 04751
+    owner: root
+    group: wheel
+

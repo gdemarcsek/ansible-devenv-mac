@@ -6,3 +6,5 @@
     - "docker"
     - "docker-compose"
 
+- name: Add environmental settings for Docker
+  include: roles/bashrc/tasks/bashrc_template.yml name=docker-env-vars src=files/docker-env-vars.sh priority=20

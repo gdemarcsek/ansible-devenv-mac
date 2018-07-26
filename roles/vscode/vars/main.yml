@@ -8,5 +8,8 @@ vscode_extensions:
   - "peterjausovec.vscode-docker"
   - "rebornix.ruby"
   - "vstirbu.vscode-mermaid-preview"
-
+  - "vscjava.vscode-java-pack"
+  - "ms-kubernetes-tools.vscode-kubernetes-tools"
+  - "vscoss.vscode-ansible"
+  - "pendrica.chef"
 

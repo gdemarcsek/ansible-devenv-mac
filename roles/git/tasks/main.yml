@@ -8,3 +8,6 @@
     dest: "/usr/local/bin"
     mode: 0755
 
+- name: Install git-lfs
+  homebrew:
+    name: git-lfs

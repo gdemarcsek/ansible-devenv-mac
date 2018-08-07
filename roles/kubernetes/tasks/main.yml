@@ -5,3 +5,7 @@
 
 - include_role:
     name: minikube
+
+- name: Install helm
+  homebrew:
+    name: kubernetes-helm

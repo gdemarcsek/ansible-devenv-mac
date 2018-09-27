@@ -12,4 +12,4 @@ vscode_extensions:
   - "ms-kubernetes-tools.vscode-kubernetes-tools"
   - "vscoss.vscode-ansible"
   - "pendrica.chef"
-
+  - "sonarsource.sonarlint-vscode" 

@@ -1,7 +1,7 @@
 ---
-- name: Make sure Java is installed
-  include_role:
-    name: java
+#- name: Make sure Java is installed
+#  include_role:
+#    name: java
 
 - name: Install SonarQube
   homebrew:

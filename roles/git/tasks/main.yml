@@ -11,3 +11,8 @@
 - name: Install git-lfs
   homebrew:
     name: git-lfs
+
+- name: Use git from Homebrew instead of Apple
+  homebrew:
+    name: git
+
